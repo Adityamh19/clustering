@@ -1,5 +1,4 @@
-mermaid
-```
+```mermaid
 graph TD
     %% Global Styles
     classDef process fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
