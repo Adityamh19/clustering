@@ -70,3 +70,37 @@ graph TD
     end
 
     L -.-> N
+```
+
+## 📈 Model Performance & Selection
+
+### **1. Performance Summary**
+* **Selected Classifier:** Random Forest
+* **F1-Score:** **~0.88** — High balance between Precision and Recall, ensuring we don't miss potential buyers.
+* **Accuracy:** **~89%** — Reliable predictions for general customer behavior.
+* **Cluster Quality:** Verified using the **Elbow Method** (Optimal K=4) and Silhouette Score analysis.
+
+### **2. Why Random Forest?**
+While Logistic Regression and SVM were tested, **Random Forest** was selected as the champion model because:
+* **Non-Linear Relationships:** It captures complex interactions between Age, Income, and Spending Habits better than linear models.
+* **Robustness:** It is less prone to overfitting compared to a single Decision Tree.
+* **Feature Importance:** It allows us to identify that **Total Spend** and **Recency** are the strongest drivers of campaign acceptance.
+
+---
+
+## 🌐 Live Demo
+Test the prediction system here:  
+👉 **[Customer Intelligence Dashboard](https://clustering01.streamlit.app/)**
+
+### 💤 Important Note on App Availability
+If you are accessing the live demo and the website appears to be "sleeping":
+* Please click the **"Yes, get this back up!"** button on the screen.
+* This will wake up the server and restore the prediction tool within a few seconds.
+
+---
+
+## 🏁 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR-USERNAME/customer-personality-analysis.git](https://github.com/YOUR-USERNAME/customer-personality-analysis.git)
